@@ -53,7 +53,7 @@ When I'm not shipping code, I'm writing folk-street rap about love, culture, and
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-golakar.vercel.app-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://golakartech.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-golakartech.vercel.app-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://golakartech.vercel.app)
 [![Twitter](https://img.shields.io/badge/@golakar-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/golakar)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-golakar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/golakar)
 [![Telegram](https://img.shields.io/badge/@golakar-0088cc?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/golakar)
