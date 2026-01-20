@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golakar | Open Source and Decentralized world</title>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/13297481?v=4&size=64">
+  <link href="./css/styles.css" rel="stylesheet">
+  <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script> -->
+ 
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://avatars.githubusercontent.com/u/13297481?v=4&size=64" alt="Golakar">	  
+      <span>Golakar</span>
+    </div>
+    <div class="nav-icons">
+      <div class="icon-btn" id="contactBtn" title="Contact Me"><i data-feather="mail"></i></div> 
+      <div class="icon-btn" id="resumeBtn" title="Download Resume"><i data-feather="download"></i></div>
+      <div class="theme-toggle" id="themeToggle" title="Toggle Theme">
+        <i data-feather="sun" style="position:absolute;left:8px;top:6px;width:18px;height:18px;"></i>
+        <i data-feather="moon" style="position:absolute;right:8px;top:6px;width:18px;height:18px;"></i>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="hero-section">
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <p class="subtitle">Crafting reliable, innovative, and impactful code — one commit at a time</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><h3 id="totalRepos" class="stats-counter">0</h3><p>Total Projects</p></div>
+      <div class="stat-card"><h3 id="totalStars" class="stats-counter">0</h3><p>Stars Earned</p></div>
+      <div class="stat-card"><h3 id="totalForks" class="stats-counter">0</h3><p>Forks</p></div>
+    </div>
+    <div class="search-box">
+      <i data-feather="search"></i>
+      <input type="text" id="searchInput" placeholder="Search projects by name, language, or topic...">
+    </div>
+    <main id="repos" class="repos-grid"></main>
+    <div class="pagination" id="pagination"></div>
+    <div class="section-header">
+      <h2 class="section-title">Recent Activity</h2>
+      <p class="section-subtitle">Latest updates from GitHub</p>
+    </div>
+    <div id="activity" class="activity-feed"></div>
+    <div class="section-header">
+      <h2 class="section-title">Latest Blog Posts</h2>
+      <p class="section-subtitle">Thoughts, tutorials, and insights</p>
+    </div>
+    <div class="blog-filters" id="blogFilters">
+      <button class="category-btn active" data-category="all">All Posts</button>
+      <button class="category-btn" data-category="development">Development</button>
+      <button class="category-btn" data-category="tutorial">Tutorials</button>
+      <button class="category-btn" data-category="javascript">JavaScript</button>
+      <button class="category-btn" data-category="web">Web Dev</button>
+      <button class="category-btn" data-category="open-source">Open Source</button>
+      <button class="category-btn" data-category="tips">Tips & Tricks</button>
+    </div>
+    <div id="blog" class="blog-posts"></div>
+    <div class="pagination" id="blogPagination"></div>
+    <!-- Skills Radar Chart Section -->
+    <div class="skills-section">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">My expertise and proficiency levels</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #f7df1e, #ffeb3b);">JS</div>
+          <div class="skill-info">
+            <h4>JavaScript</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 95%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #61dafb, #00d4ff);">RE</div>
+          <div class="skill-info">
+            <h4>React</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 90%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #3776ab, #4b8bbe);">PY</div>
+          <div class="skill-info">
+            <h4>Python</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 85%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #3178c6, #5aa9e6);">TS</div>
+          <div class="skill-info">
+            <h4>TypeScript</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 88%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #38bdf8, #0ea5e9);">TW</div>
+          <div class="skill-info">
+            <h4>Tailwind CSS</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 92%"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #68a063, #83cd29);">NO</div>
+          <div class="skill-info">
+            <h4>Node.js</h4>
+            <div class="skill-level"><div class="skill-progress" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Timeline Section -->
+    <div class="timeline-section">
+      <div class="section-header">
+        <h2 class="section-title">Project Timeline</h2>
+        <p class="section-subtitle">Key milestones and achievements</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2024</div>
+            <h3 class="timeline-title">Portfolio Website Launch</h3>
+            <p class="timeline-description">Created this comprehensive portfolio showcasing open source projects and technical expertise.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2023</div>
+            <h3 class="timeline-title">Open Source Contributions</h3>
+            <p class="timeline-description">Active contributor to various GitHub projects with focus on web development and automation tools.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2022</div>
+            <h3 class="timeline-title">Blog Creation</h3>
+            <p class="timeline-description">Started sharing technical knowledge and insights through blogging platform.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2021</div>
+            <h3 class="timeline-title">First GitHub Repository</h3>
+            <p class="timeline-description">Published initial open source project and began contributing to developer community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Achievement Badges Section -->
+    <div class="achievements-section">
+      <div class="section-header">
+        <h2 class="section-title">Achievements & Milestones</h2>
+        <p class="section-subtitle">Recognition and accomplishments</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-badge">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-info">
+            <h4>GitHub Stars</h4>
+            <p>Total repository stars earned</p>
+          </div>
+          <div class="badge-count" id="starCount">0</div>
+        </div>
+        <div class="achievement-badge">
+          <div class="badge-icon">🍴</div>
+          <div class="badge-info">
+            <h4>Forks</h4>
+            <p>Repository forks created</p>
+          </div>
+          <div class="badge-count" id="forkCount">0</div>
+        </div>
+        <div class="achievement-badge">
+          <div class="badge-icon">📝</div>
+          <div class="badge-info">
+            <h4>Blog Posts</h4>
+            <p>Technical articles published</p>
+          </div>
+          <div class="badge-count" id="blogCount">0</div>
+        </div>
+        <div class="achievement-badge">
+          <div class="badge-icon">🚀</div>
+          <div class="badge-info">
+            <h4>Projects</h4>
+            <p>Open source projects</p>
+          </div>
+          <div class="badge-count" id="projectCount">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- AI Chat Integration -->
+  <div class="ai-chat">
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <span>AI Assistant</span>
+        <button class="close-chat" onclick="toggleChat()" style="background: none; border: none; color: white; font-size: 1.2rem; cursor: pointer;">×</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+          Hi! I'm your AI assistant. Ask me about my projects, skills, or experience!
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Ask me anything..." onkeypress="handleChatInput(event)">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <button class="chat-toggle" onclick="toggleChat()" title="Chat with AI">
+      💬
+    </button>
+  </div>
+  <!-- Contact Modal with Real Email (Formspree) -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">×</button>
+      <h2>Get In Touch</h2>
+      <form action="https://formspree.io/f/myzrpywo" method="POST" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>© <span id="year"></span> <a href="https://golakar.vercel.app">Golakar</a> Built with Passion • Powered by Open Source</p>
+  </footer>
+ <script src="./js/app.js"></script>
+</body>
+</html>
