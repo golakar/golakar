@@ -2,7 +2,7 @@
 
 # 👽 Golakar — Enjoying Alien Technology
 
-<img src="https://raw.githubusercontent.com/golakar/golakar/main/img/golakar.png" alt="Bugsfree Header" width="70%"/>
+<img src="https://raw.githubusercontent.com/golakar/golakar/main/img/golakar.png" alt="Golakar Header" width="70%"/>
 
 <br/>
 
