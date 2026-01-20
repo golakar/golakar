@@ -24,14 +24,6 @@ When I'm not shipping code, I'm writing folk-street rap about love, culture, and
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)
 ![Web3](https://img.shields.io/badge/Web3.js-F16822?style=flat&logo=web3.js&logoColor=white)
 
-## 🔥 Recent Projects
-
-| Project              | Description                                      | Tech Stack                     |
-|----------------------|--------------------------------------------------|--------------------------------|
-| **BugsfreeTV**       | Animated live TV streaming platform              | React, Tailwind, Framer Motion |
-| **CryptoDonate**     | Real-time crypto donation widget                 | Web3.js, Ethers, React         |
-| **DecentraBots**     | AI-powered bots for DeFi & dApps                 | Node.js, Python, Solana SDK    |
-
 ## 📊 GitHub Stats
 
 <div align="center">
